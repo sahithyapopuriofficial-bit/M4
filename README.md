@@ -192,10 +192,35 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
-
+```
+#include <stdio.h>
+int main()
+{
+    char str1[100], str2[100];
+    int i = 0, flag = 0;
+    scanf("%s", str1);
+    scanf("%s", str2);
+    while(str1[i] != '\0' || str2[i] != '\0')
+    {
+        if(str1[i] != str2[i])
+        {
+            flag = 1;
+            break;
+        }
+        i++;
+    }
+    if(flag == 0)
+        printf("strings are same");
+    else
+        printf("strings are not same");
+    return 0;
+}
+```
+<img width="640" height="768" alt="image" src="https://github.com/user-attachments/assets/660ce57d-892c-4b67-a18a-47d3b403fb0a" />
 
 ## OUTPUT
- 
+<img width="693" height="345" alt="image" src="https://github.com/user-attachments/assets/5eb96ddf-0352-4d1c-bfd2-652ddfe6ee9e" />
+
 
 ## RESULT
 Thus the C Program to compare two strings without using strcmp() has been executed successfully.
